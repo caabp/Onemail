@@ -106,7 +106,7 @@ async def login(login: data_login_form):
 
   response = requests.request("POST", url, data=payload)
 
-  print(response.text)
+#   print(response.text)
   return(response.text)
 
 
@@ -127,5 +127,5 @@ async def getAccountInfo(info: data_acc_info):
 
     response = requests.request("POST", url, headers=headers, data=payload)
 
-    print(response.text)
+    # print(response.text)
     return(response.text)
